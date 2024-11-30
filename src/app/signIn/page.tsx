@@ -9,8 +9,8 @@ const Page = () => {
     signIn(provider, { callbackUrl: "/dashboard" });
   };
   return (
-    <div className="bg-black w-screen h-screen flex items-center justify-center">
-      <div className="flex flex-col justify-center items-center pt-7 sm:mx-32 md:mx-48 lg:mx-64 xl:mx-96 rounded-lg bg-white/20 backdrop-blur-md border border-gray-500/30 shadow-md shadow-gray-700/50 p-8 max-w-sm w-full">
+    <div className="bg-black w-screen h-screen flex items-center justify-center" style={{ backgroundImage: 'url(/image.png)', backgroundSize: 'cover' }}>
+      <div className="flex flex-col justify-center items-center pt-7 sm:mx-32 md:mx-48 lg:mx-64 xl:mx-96 rounded-lg bg-white/20 backdrop-blur-md border border-sky-500/100 shadow-md shadow-gray-700/50 p-8 max-w-sm w-full">
         <div className="flex flex-col justify-center items-center mb-5">
           <h1 className="text-xl font-bold text-white mb-2">Sign in to this site</h1>
           <p className="text-gray-300">Welcome! Please sign in to continue</p>
@@ -57,7 +57,7 @@ const Page = () => {
         </div>
 
         {/* Submit Button */}
-        <button className="py-2 px-5 rounded-md bg-zinc-500 hover:bg-gray-600 text-white font-medium">
+        <button className="py-2 px-5 rounded-md bg-sky-500 hover:bg-sky-600 text-white font-medium">
           Continue
         </button>
       </div>
